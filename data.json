@@ -26,6 +26,19 @@
         "description": "Be the racing champion with this high-speed toy car. Its aerodynamic design and sleek finish make it stand out on the race track. Equipped with a friction motor for lightning-fast acceleration. Suitable for ages 6 and above."
       },
       {
+        "picture": "https://i.ibb.co/4sgWhjQ/lamborgini.jpg",
+        "title": "Lamborgini",
+        "price": "$29.99",
+        "category" : "Sports Car",
+        "sub_category" : "sports",
+        "rating": 4.8,
+        "seller": "Playtime Toys",
+        "toy_name": "Racing Champion",
+        "email": "info@playtimetoys.com",
+        "quantity": 20,
+        "description": "Be the racing champion with this high-speed toy car. Its aerodynamic design and sleek finish make it stand out on the race track. Equipped with a friction motor for lightning-fast acceleration. Suitable for ages 6 and above."
+      },
+      {
         "picture": "https://i.ibb.co/60MV0JV/fire.jpg",
         "title": "Convertible Cruiser",
         "price": "$17.99",
@@ -52,6 +65,19 @@
         "description": "Get ready for monster truck madness with this powerful toy car. It features oversized wheels, a sturdy chassis, and a monster truck-inspired design. Perfect for performing daring stunts and conquering any obstacle. Suitable for ages 5 and above."
       },
       {
+        "picture": "https://i.ibb.co/6Ry0q2V/images.jpg",
+        "title": "Monster Truck Madness",
+        "price": "$39.99",
+        "category" : "Mini Fire Truck",
+        "sub_category" : "fire",
+        "rating": 4.9,
+        "seller": "ToyLand",
+        "toy_name": "Monster Truck Madness",
+        "email": "info@toyland.com",
+        "quantity": 15,
+        "description": "Get ready for monster truck madness with this powerful toy car. It features oversized wheels, a sturdy chassis, and a monster truck-inspired design. Perfect for performing daring stunts and conquering any obstacle. Suitable for ages 5 and above."
+      },
+      {
         "picture": "https://i.ibb.co/yBDkw6Q/modelp.jpg",
         "title": "Police Pursuit",
         "price": "$21.99",
@@ -61,6 +87,19 @@
         "seller": "Funville Toys",
         "toy_name": "Police Pursuit",
         "email": "info@funvilletoys.com",
+        "quantity": 25,
+        "description": "Join the police pursuit with this action-packed toy car. It comes with flashing lights and realistic siren sounds for an immersive play experience. The police-themed design adds to the excitement. Suitable for ages 4 and up."
+      },
+      {
+        "picture": "https://i.ibb.co/WxGb0b0/police.jpg",
+        "title": "Police Pursuit",
+        "price": "$21.99",
+        "category" : "Mini Police Truck",
+        "sub_category" : "police",
+        "rating": 4.7,
+        "seller": "Funville Toys",
+        "toy_name": "Police Pursuit",
+        "email": "info@fvilletoys.com",
         "quantity": 25,
         "description": "Join the police pursuit with this action-packed toy car. It comes with flashing lights and realistic siren sounds for an immersive play experience. The police-themed design adds to the excitement. Suitable for ages 4 and up."
       },
