@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 5000;
@@ -33,9 +33,19 @@ async function run() {
     const toyCollection = client.db('toyMarketplace').collection('marketplace')
 
     app.get('/allToys', async(req, res) =>{
-        const cursor = toyCollection.find();
+        const cursor = toyCollection.find().limit(20);
         const result = await cursor.toArray();
         res.send(result);
+    })
+
+
+    app.get("/allToys/:text", async(req, res) =>{
+      console.log(req.params.text);
+      if(req.params.text == "fire" || req.params.text == "police" ||req.params.text == "sports"){
+        const result = await toyCollection.find({sub_category : req.params.text}).toArray();
+        console.log(result)
+        return res.send(result)
+      }
     })
 
 
@@ -65,6 +75,16 @@ async function run() {
     })
 
 
+    app.delete("/myToys/:id", async(req, res) =>{
+        const id = req.params.id;
+        const query = {_id: new ObjectId(id)}
+        const result = await toyCollection.deleteOne(query)
+        res.send(result)
+    })
+
+
+
+
     app.get("/myToys/:email", async(req, res) =>{
         console.log(req.params.email);
         const result = await toyCollection
@@ -72,25 +92,6 @@ async function run() {
         .toArray()
         res.send(result)
     });
-
-
-    // const indexKey = {name : 1, category : 1};
-    // const indexOption = { name : "nameCategory"};
-
-    // const result = await toyCollection.createIndex(indexKey, indexOption);
-
-    // app.get("/toySearch/:text", async (req, res) =>{
-    //   const search = req.params.text;
-
-    //   const result = await toyCollection.find({
-    //     $or:[
-    //       {name : { $regex: search, $options : "1"}},
-    //       {category : { $regex: search, $options : "1"}}
-    //     ]
-    //   })
-    //   .toArray()
-    //   res.send(result)
-    // })
 
 
     app.get("/toySearch/:text", async (req, res) => {
