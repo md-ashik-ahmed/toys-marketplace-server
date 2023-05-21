@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 
-
 console.log(process.env.DB_USER)
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.zt47ric.mongodb.net/?retryWrites=true&w=majority`;
@@ -72,7 +71,7 @@ async function run() {
         }
       });
 
-      
+
 
       app.get('/myToys', async (req, res) => {
         console.log(req.query.email);
@@ -91,7 +90,6 @@ async function run() {
         const result = await toyCollection.deleteOne(query)
         res.send(result)
     })
-
 
 
 
@@ -126,8 +124,9 @@ async function run() {
       const updateDoc = {
         $set: {
           title: body.title,
-          quantity: body.quantiy,
+          quantity: body.quantity,
           price: body.price,
+          discription : body.discription,
         },
       };
       const result = await toyCollection.updateOne(filter, updateDoc);
@@ -135,11 +134,6 @@ async function run() {
     });
 
    
-   
-
-
-
-
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
@@ -150,12 +144,9 @@ async function run() {
 }
 run().catch(console.dir);
 
-
-
 app.get('/', (req, res) =>{
     res.send('Toy is running')
 })
-
 
 app.listen(port, () =>{
     console.log(`Toy is running on port ${port}`)
