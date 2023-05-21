@@ -39,6 +39,14 @@ async function run() {
     })
 
 
+    app.get('/marketplace/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result = await toyCollection.findOne(query)
+      res.send(result)
+    })
+
+
     app.get("/allToys/:text", async(req, res) =>{
       console.log(req.params.text);
       if(req.params.text == "fire" || req.params.text == "police" ||req.params.text == "sports"){
@@ -106,7 +114,23 @@ async function run() {
         .toArray();
       res.send(result);
     });
+   
 
+    app.put("/updateToy/:id", async (req, res) => {
+      const id = req.params.id;
+      const body = req.body;
+      console.log(body);
+      const filter = { _id: new ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          title: body.title,
+          salary: body.salary,
+          category: body.category,
+        },
+      };
+      const result = await jobsCollection.updateOne(filter, updateDoc);
+      res.send(result);
+    });
 
    
    
