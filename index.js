@@ -124,16 +124,19 @@ async function run() {
       const updateDoc = {
         $set: {
           title: body.title,
-          salary: body.salary,
-          category: body.category,
+          quantity: body.quantiy,
+          price: body.price,
         },
       };
-      const result = await jobsCollection.updateOne(filter, updateDoc);
+      const result = await toyCollection.updateOne(filter, updateDoc);
       res.send(result);
     });
 
    
    
+
+
+    
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
