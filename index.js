@@ -123,10 +123,12 @@ async function run() {
       const filter = { _id: new ObjectId(id) };
       const updateDoc = {
         $set: {
-          title: body.title,
+          name : body.name,
           quantity: body.quantity,
           price: body.price,
-          discription : body.discription,
+          description : body.description,
+          seller : body.seller,
+          picture : body.picture
         },
       };
       const result = await toyCollection.updateOne(filter, updateDoc);

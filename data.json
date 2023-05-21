@@ -7,7 +7,7 @@
         "sub_category" : "sports",
         "rating": 4.2,
         "seller": "Toys R Us",
-        "toy_name": "Off-Road Adventure",
+        "name": "Off-Road Adventure",
         "email": "info@toysrus.com",
         "quantity": 30,
         "description": "Experience thrilling off-road adventures with this rugged toy car. It features a tough exterior, large wheels for all-terrain performance, and realistic detailing. Made for kids who love outdoor exploration. Suitable for ages 4 and up."
@@ -20,7 +20,7 @@
         "sub_category" : "sports",
         "rating": 4.7,
         "seller": "Playtime Toys",
-        "toy_name": "Racing Champion",
+        "name": "Racing Champion",
         "email": "info@playtimetoys.com",
         "quantity": 20,
         "description": "Be the racing champion with this high-speed toy car. Its aerodynamic design and sleek finish make it stand out on the race track. Equipped with a friction motor for lightning-fast acceleration. Suitable for ages 6 and above."
@@ -33,7 +33,7 @@
         "sub_category" : "sports",
         "rating": 4.8,
         "seller": "Playtime Toys",
-        "toy_name": "Racing Champion",
+        "name": "Racing Champion",
         "email": "info@playtimetoys.com",
         "quantity": 20,
         "description": "Be the racing champion with this high-speed toy car. Its aerodynamic design and sleek finish make it stand out on the race track. Equipped with a friction motor for lightning-fast acceleration. Suitable for ages 6 and above."
@@ -46,20 +46,20 @@
         "sub_category" : "fire",
         "rating": 4.0,
         "seller": "Kids' Emporium",
-        "toy_name": "Convertible Cruiser",
+        "name": "Convertible Cruiser",
         "email": "info@kidsemporium.com",
         "quantity": 40,
         "description": "Cruise in style with this convertible toy car. Its vibrant colors and smooth lines give it a modern look. The roof can be removed for open-top driving fun. Perfect for imaginative play. Suitable for ages 3 and up."
       },
       {
-        "picture": "https://i.ibb.co/60MV0JV/fire.jpg",
+        "picture": "https://i.ibb.co/WFvNcHv/fire-truck.jpg",
         "title": "Monster Truck Madness",
         "price": "$39.99",
         "category" : "Mini Fire Truck",
         "sub_category" : "fire",
         "rating": 4.9,
         "seller": "ToyLand",
-        "toy_name": "Monster Truck Madness",
+        "name": "Monster Truck Madness",
         "email": "info@toyland.com",
         "quantity": 15,
         "description": "Get ready for monster truck madness with this powerful toy car. It features oversized wheels, a sturdy chassis, and a monster truck-inspired design. Perfect for performing daring stunts and conquering any obstacle. Suitable for ages 5 and above."
@@ -72,7 +72,7 @@
         "sub_category" : "fire",
         "rating": 4.9,
         "seller": "ToyLand",
-        "toy_name": "Monster Truck Madness",
+        "name": "Monster Truck Madness",
         "email": "info@toyland.com",
         "quantity": 15,
         "description": "Get ready for monster truck madness with this powerful toy car. It features oversized wheels, a sturdy chassis, and a monster truck-inspired design. Perfect for performing daring stunts and conquering any obstacle. Suitable for ages 5 and above."
@@ -85,7 +85,7 @@
         "sub_category" : "police",
         "rating": 4.4,
         "seller": "Funville Toys",
-        "toy_name": "Police Pursuit",
+        "name": "Police Pursuit",
         "email": "info@funvilletoys.com",
         "quantity": 25,
         "description": "Join the police pursuit with this action-packed toy car. It comes with flashing lights and realistic siren sounds for an immersive play experience. The police-themed design adds to the excitement. Suitable for ages 4 and up."
@@ -98,7 +98,7 @@
         "sub_category" : "police",
         "rating": 4.7,
         "seller": "Funville Toys",
-        "toy_name": "Police Pursuit",
+        "name": "Police Pursuit",
         "email": "info@fvilletoys.com",
         "quantity": 25,
         "description": "Join the police pursuit with this action-packed toy car. It comes with flashing lights and realistic siren sounds for an immersive play experience. The police-themed design adds to the excitement. Suitable for ages 4 and up."
@@ -111,7 +111,7 @@
         "sub_category" : "police",
         "rating": 4.6,
         "seller": "Tiny Builders",
-        "toy_name": "Construction Crew",
+        "name": "Construction Crew",
         "email": "info@tinybuilders.com",
         "quantity": 35,
         "description": "Build and play with this construction-themed toy car. It features a detach."
